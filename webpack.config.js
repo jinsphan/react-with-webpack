@@ -13,6 +13,7 @@ module.exports = {
     devServer: {
         contentBase: __dirname + "/dist",
         compress: true,
+        overlay: true,
         port: 3000
     },
     module: {
