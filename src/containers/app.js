@@ -1,7 +1,5 @@
 import React from "react";
-import {
-    UserSearch
-}   from "./index"; 
+import { UserSearch } from "./index";
 
 class App extends React.Component {
     render() {
