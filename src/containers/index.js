@@ -1,11 +1,6 @@
-import {
-    Search as UserSearch
-} from "./user";
-import App from "./app";
+import { Search as UserSearch } from './user';
+import App from './app';
 
-
-export {
-    UserSearch,
-}
+export { UserSearch };
 
 export default App;

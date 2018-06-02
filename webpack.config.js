@@ -24,11 +24,6 @@ module.exports = {
                 use: ["babel-loader"]
             },
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: ['babel-loader', 'eslint-loader']
-            },
-            {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
