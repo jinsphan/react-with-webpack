@@ -1,6 +1,6 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
-const config = {
+let config = {
     publicPath: "/",
     contentBase: __dirname + "/../public",
     env: NODE_ENV,
@@ -11,5 +11,6 @@ const config = {
     // Whether to enable verbose logging
     verbose: false,
 };
+
 
 module.exports = config;

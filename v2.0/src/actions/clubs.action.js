@@ -1,4 +1,4 @@
-import { clubsApi } from "api";
+import { clubsApi, request } from "api";
 
 const keyAction = "clubs.action";
 
@@ -15,6 +15,7 @@ const setClubs = (data = []) => {
 }
 export const fetchDataByName = name => {
     return dispatch => {
+        console.log(process.env);
         return clubsApi.fetchByName(name)
             .then(data => {
                 dispatch(setClubs(data))

@@ -1,3 +1,4 @@
+require("./env");
 const path = require('path');
 const webpack = require('webpack');
 const middleware = require('webpack-dev-middleware');
@@ -7,18 +8,15 @@ const express = require('express');
 const app = express();
 const config = require("../config/main");
 
-// require("babel-core").transform("code", {
-//     plugins: ["transform-runtime"]
-// });
 
 app.use(middleware(compiler, {
     // webpack-dev-middleware options
     publicPath: "/",
-    contentBase: path.resolve(config.basePath, config.contentBase)
-    // hot         : true,
-    // quiet       : false,
-    // noInfo      : false,
-    // lazy        : false,
+    contentBase: path.resolve(config.basePath, config.contentBase),
+    hot         : true,
+    quiet       : false,
+    noInfo      : false,
+    lazy        : false,
     // stats       : 'normal',
 }));
 
