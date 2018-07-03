@@ -1,0 +1,33 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 2 Chrome versions"
+                    ]
+                }
+            }
+        ],
+        "stage-0",
+        "react"
+    ],
+    "plugins": [
+        [
+            "transform-class-properties",
+            {
+                "spec": true
+            },
+            [
+                "transform-runtime",
+                {
+                    "helpers": false,
+                    "polyfill": false,
+                    "regenerator": true,
+                    "moduleName": "babel-runtime"
+                }
+            ]
+        ]
+    ]
+}
